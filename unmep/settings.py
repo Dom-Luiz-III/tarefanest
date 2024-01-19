@@ -1,3 +1,6 @@
+# Programa feito para a atividade de estágio da unMEP
+# Feito por Luiz Henrique Carneiro Carvalho
+
 """
 Django settings for unmep project.
 

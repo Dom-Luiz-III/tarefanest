@@ -1,8 +1,8 @@
 from django.urls import path
 
-# from .views import index, moto, carro
+from .views import index
 
 urlpatterns = [
-    #path('', index, name='index'),
-
+    path('', index, name='admin'),
+    path('home', index, name='home'),
 ]
