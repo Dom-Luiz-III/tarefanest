@@ -21,3 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('core.urls')),
 ]
+
+admin.AdminSite.site_header = 'Página do Administrador'
+admin.AdminSite.site_title = 'TarefaNest'
+admin.AdminSite.index_title = 'Banco de Dados TarefaNest'

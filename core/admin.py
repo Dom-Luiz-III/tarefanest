@@ -3,6 +3,6 @@ from .models import Tarefa
 
 @admin.register(Tarefa)
 class TarefaAdmin(admin.ModelAdmin):
-    list_display = ('titulo', 'data', 'status')
+    list_display = ('titulo', 'descricao' , 'data', 'status')
     list_filter = ('status',)
     search_fields = ('titulo',)
