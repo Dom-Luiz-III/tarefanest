@@ -1,5 +1,6 @@
 from django.db import models
 
+# Método construtor onde possuí os atributos da Tarefa:
 class Tarefa(models.Model):
     STATUS_CHOICES = [
         ('pendente', 'Pendente'),
