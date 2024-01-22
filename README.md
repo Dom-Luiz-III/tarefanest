@@ -6,6 +6,8 @@ TarefaNest é um website intuitivo e simples projetado para você criar a sua ge
 
 Recursos destacados incluem a capacidade de criar novas tarefas, fornecendo detalhes como título, descrição, data e status. Seja para tarefas pendentes, em andamento ou concluídas, TarefaNest oferece flexibilidade para organizar seu fluxo de trabalho. Além disso, a plataforma permite a exclusão de tarefas, proporcionando um controle completo sobre seu ambiente de gerenciamento de tarefas.
 
+Esse projeto foi feito como parte duma atividade realizada pela unMEP com o propósito de desenvolver uma aplicação CRUD. 
+
 ---
 
 <details>
