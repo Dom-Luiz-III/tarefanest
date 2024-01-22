@@ -14,7 +14,10 @@ Esse projeto foi feito como parte duma atividade realizada pela unMEP com o prop
   <summary> <b> Prints do Projeto </b> </summary>
 <p>
 
-Test
+Página home:
+
+![Web 1]([https://github.com/Dom-Luiz-III/JM_Veiculos/blob/main/core/static/images/print1.png](https://github.com/Dom-Luiz-III/projeto_unmep/blob/main/papelada/prints/home.png))
+
 
 </p>
 </details>
