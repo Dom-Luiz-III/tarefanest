@@ -5,6 +5,7 @@
 TarefaNest é um website intuitivo e simples projetado para você criar a sua gestão de suas tarefas diárias de forma prática e acessível pela internet. Com uma interface amigável, permite que você anote suas tarefas importantes a qualquer momento e de qualquer lugar.
 
 Recursos destacados incluem a capacidade de criar novas tarefas, fornecendo detalhes como título, descrição, data e status. Seja para tarefas pendentes, em andamento ou concluídas, TarefaNest oferece flexibilidade para organizar seu fluxo de trabalho. Além disso, a plataforma permite a exclusão de tarefas, proporcionando um controle completo sobre seu ambiente de gerenciamento de tarefas.
+
 ---
 
 <details>
