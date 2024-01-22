@@ -15,6 +15,7 @@ Feito por Luiz Henrique Carneiro Carvalho
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
   <link rel="icon" href="{% static 'images/notas.ico' %}" type="image/x-icon">
+  <link rel="stylesheet" href="{% static 'css/index_style.css' %}">
   <title>TarefaNest - Sua Lista de Tarefas</title>
 </head>
 
@@ -22,6 +23,8 @@ Feito por Luiz Henrique Carneiro Carvalho
   <!-- Navbar da página -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
+      <a class="navbar-brand"  href=""><img id="nav-logo" class="logo_style" src="{% static 'images/notas.png' %}"
+        alt="TarefaNest Logo-Marca"></a>
       <a class="navbar-brand" href="">TarefaNest</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,8 +48,7 @@ Feito por Luiz Henrique Carneiro Carvalho
         <p class="text-center">Sua solução simples para gerenciar suas tarefas diárias da unMEP.</p>
 
         <div class="card w-50 row justify-content-center" style="margin-left: 25%;">
-          <img src="{% static 'images/pessoa_anotando.avif' %}" class="card-img-top "
-            style="width: 300px; height: 300px;">
+          <img src="{% static 'images/pessoa_anotando.avif' %}" class="card-img-top image1_style">
           <div class="card-body">
             <h5 class="card-title">Comece agora mesmo!</h5>
             <p class="card-text">Registre suas tarefas e mantenha-se produtivo.</p>
@@ -99,7 +101,7 @@ Feito por Luiz Henrique Carneiro Carvalho
     </div>
   </div>
 
-  <!-- Tabela para ver todas as tabelas armazenadas no banco de dados, também é possível mudar o status por aqui -->
+  <!-- Tabela para ver todas as tabelas armazenadas no banco de dados, também é possível mudar o status ou apagar por aqui -->
   <div class="container bg-body mt-5">
     <h1 class="text-center mb-4">Tarefas Disponíveis</h1>
     <div class="container mx-auto text-center table-responsive">
@@ -110,7 +112,7 @@ Feito por Luiz Henrique Carneiro Carvalho
             <th>Descrição</th>
             <th>Data</th>
             <th>Status</th>
-            <th>Ação</th> 
+            <th>Ação</th>
           </tr>
         </thead>
         <tbody>
@@ -119,7 +121,6 @@ Feito por Luiz Henrique Carneiro Carvalho
             <td>{{ tarefa.titulo }}</td>
             <td>{{ tarefa.descricao }}</td>
             <td>{{ tarefa.data }}</td>
-            <td>{{ tarefa.status }}</td>
             <td>
               <form method="POST" action="{% url 'alterar_status' tarefa.id %}">
                 {% csrf_token %}
@@ -128,6 +129,13 @@ Feito por Luiz Henrique Carneiro Carvalho
                   <option value="executando" {% if tarefa.status == 'executando' %}selected{% endif %}>Executando</option>
                   <option value="concluida" {% if tarefa.status == 'concluida' %}selected{% endif %}>Concluída</option>
                 </select>
+              </form>
+            </td>
+            <td>
+              <form method="POST" action="{% url 'apagar_tarefa' tarefa.id %}"
+                onsubmit="return confirm('Tem certeza que deseja apagar essa tarefa?');">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-danger">Apagar</button>
               </form>
             </td>
           </tr>

@@ -1,7 +1,6 @@
-from django.shortcuts import render
-from django.shortcuts import get_object_or_404
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.views.decorators.http import require_POST
+from django.views import View
 from .models import Tarefa
 
 from .forms import TarefaForm
@@ -40,3 +39,9 @@ def alterar_status(request, tarefa_id):
         tarefa.save()
 
     return redirect('index')
+
+class ApagarTarefaView(View):
+    def post(self, request, tarefa_id):
+        tarefa = get_object_or_404(Tarefa, id=tarefa_id)
+        tarefa.delete()
+        return redirect('index')
