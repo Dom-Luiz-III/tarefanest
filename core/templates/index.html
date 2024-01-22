@@ -23,8 +23,8 @@ Feito por Luiz Henrique Carneiro Carvalho
   <!-- Navbar da página -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
-      <a class="navbar-brand"  href=""><img id="nav-logo" class="logo_style" src="{% static 'images/notas.png' %}"
-        alt="TarefaNest Logo-Marca"></a>
+      <a class="navbar-brand" href=""><img id="nav-logo" class="logo_style" src="{% static 'images/notas.png' %}"
+          alt="TarefaNest Logo-Marca"></a>
       <a class="navbar-brand" href="">TarefaNest</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,14 +46,33 @@ Feito por Luiz Henrique Carneiro Carvalho
       <div class="col-md-6">
         <h1 class="text-center mb-4">Bem-vindo ao TarefaNest</h1>
         <p class="text-center">Sua solução simples para gerenciar suas tarefas diárias da unMEP.</p>
+      </div>
+    </div>
+  </div>
 
-        <div class="card w-50 row justify-content-center" style="margin-left: 25%;">
-          <img src="{% static 'images/pessoa_anotando.avif' %}" class="card-img-top image1_style">
-          <div class="card-body">
-            <h5 class="card-title">Comece agora mesmo!</h5>
-            <p class="card-text">Registre suas tarefas e mantenha-se produtivo.</p>
-          </div>
-        </div>
+  <div class="card-group container">
+    <div class="card">
+      <img src="{% static 'images/equipe.avif' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center">Organize a rotina da sua equipe!
+        </h5>
+        <p class="card-text">Gerencie suas tarefas de forma eficiente e alcance a produtividade desejada.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="{% static 'images/pessoa_anotando.avif' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center">Comece agora mesmo!
+        </h5>
+        <p class="card-text">Registre suas tarefas e mantenha-se produtivo.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="{% static 'images/bloco.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center">Desperte Sua Eficiência!</h5>
+        <p class="card-text">Otimize seu tempo e alcance seus objetivos através do registro e acompanhamento das suas
+          atividades diárias.</p>
       </div>
     </div>
   </div>
@@ -124,7 +143,7 @@ Feito por Luiz Henrique Carneiro Carvalho
             <td>
               <form method="POST" action="{% url 'alterar_status' tarefa.id %}">
                 {% csrf_token %}
-                <select name="novo_status" class="form-control text-center" onchange="this.form.submit()">
+                <select name="novo_status" class="form-control btn btn-secondary text-center" onchange="this.form.submit()">
                   <option value="pendente" {% if tarefa.status == 'pendente' %}selected{% endif %}>Pendente</option>
                   <option value="executando" {% if tarefa.status == 'executando' %}selected{% endif %}>Executando</option>
                   <option value="concluida" {% if tarefa.status == 'concluida' %}selected{% endif %}>Concluída</option>
