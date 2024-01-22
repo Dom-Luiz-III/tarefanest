@@ -18,6 +18,21 @@ Página home:
 
 ![Web 1](https://github.com/Dom-Luiz-III/projeto_unmep/blob/main/papelada/prints/home.png)
 
+Adicionar tarefas:
+
+![Web 1](https://github.com/Dom-Luiz-III/projeto_unmep/blob/main/papelada/prints/criar.png)
+
+Tarefas armazenadas:
+
+![Web 1](https://github.com/Dom-Luiz-III/projeto_unmep/blob/main/papelada/prints/tarefas.png)
+
+Página do administrador:
+
+![Web 1](https://github.com/Dom-Luiz-III/projeto_unmep/blob/main/papelada/prints/admin.png)
+
+Versão mobile:
+
+![Web 1](https://github.com/Dom-Luiz-III/projeto_unmep/blob/main/papelada/prints/mobile.png)
 
 </p>
 </details>
