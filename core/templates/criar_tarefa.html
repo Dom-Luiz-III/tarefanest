@@ -52,6 +52,17 @@ Feito por Luiz Henrique Carneiro Carvalho
         </div>
     </nav>
 
+    <!-- Adicione esta div para exibir mensagens -->
+    <div class="container mt-3">
+        {% if messages %}
+        {% for message in messages %}
+        <div class="alert alert-success" role="alert">
+            {{ message }}
+        </div>
+        {% endfor %}
+        {% endif %}
+    </div>
+
     <!-- Card onde você adiciona uma tarefa nova -->
     <div class="container mt-5 mb-5 flex-grow-1">
         <div class="row justify-content-center">

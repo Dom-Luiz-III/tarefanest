@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views.decorators.http import require_POST
+from django.contrib import messages
 from django.views import View
 from .models import Tarefa
 
@@ -38,6 +39,9 @@ def criar_tarefa(request):
         form = TarefaForm(request.POST)
         if form.is_valid():
             form.save()
+
+            messages.success(request, 'Tarefa adicionada com sucesso!')
+
             return redirect('criar_tarefa_pagina')
     else:
         form = TarefaForm()
