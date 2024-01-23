@@ -7,7 +7,7 @@
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "projeto_unmep/wsgi.py"
+            "dest": "unmep/wsgi.py"
         }
     ]
 }
