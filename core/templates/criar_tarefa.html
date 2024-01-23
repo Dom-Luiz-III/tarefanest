@@ -4,7 +4,7 @@ Programa feito para a atividade de estágio da unMEP
 Feito por Luiz Henrique Carneiro Carvalho
 -->
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="min-vh-100">
 
 <head>
     <meta charset="UTF-8">
@@ -19,7 +19,7 @@ Feito por Luiz Henrique Carneiro Carvalho
     <title>TarefaNest - Sua Lista de Tarefas</title>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <!-- Navbar da página -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container d-flex justify-content-between">
@@ -53,10 +53,9 @@ Feito por Luiz Henrique Carneiro Carvalho
     </nav>
 
     <!-- Card onde você adiciona uma tarefa nova -->
-    <div class="container mt-5">
+    <div class="container mt-5 mb-5 flex-grow-1">
         <div class="row justify-content-center">
             <div class="col-md-6">
-
                 <div class="card mb-4">
                     <div class="card-body">
                         <h2 class="text-center mb-4">Criar Nova Tarefa</h2>
@@ -91,13 +90,12 @@ Feito por Luiz Henrique Carneiro Carvalho
                         </form>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
 
     <!-- Footer da página -->
-    <footer class="bg-dark text-white text-center py-3 mt-5">
+    <footer class="bg-dark text-white text-center py-3">
         <div class="container">
             <p class="text-center mt-2"> Programa feito por Luiz Henrique Carneiro Carvalho</p>
             <a class="btn text-white" data-mdb-ripple-init style="background-color: #0082ca;" target="_blank"
