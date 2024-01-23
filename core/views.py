@@ -15,6 +15,22 @@ def index(request):
     }
     return render(request, 'index.html', context)
 
+def criar_tarefa_pagina(request):
+    tarefas = Tarefa.objects.all()
+
+    context = {
+        'tarefas': tarefas,
+    }
+    return render(request, 'criar_tarefa.html', context)
+
+def tarefa_disponivel(request):
+    tarefas = Tarefa.objects.all()
+
+    context = {
+        'tarefas': tarefas,
+    }
+    return render(request, 'tarefa_disponivel.html', context)
+
 
 # Método feito para criar uma tarefa nova pela página HTML
 def criar_tarefa(request):
@@ -22,11 +38,11 @@ def criar_tarefa(request):
         form = TarefaForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('index')
+            return redirect('criar_tarefa_pagina')
     else:
         form = TarefaForm()
 
-    return render(request, 'index.html', {'form': form})
+    return render(request, 'criar_tarefa.html', {'form': form})
 
 # Método feito para alterar o status da tarefa pela página HTML
 @require_POST
@@ -38,10 +54,10 @@ def alterar_status(request, tarefa_id):
         tarefa.status = novo_status
         tarefa.save()
 
-    return redirect('index')
+    return redirect('tarefa_disponivel')
 
 class ApagarTarefaView(View):
     def post(self, request, tarefa_id):
         tarefa = get_object_or_404(Tarefa, id=tarefa_id)
         tarefa.delete()
-        return redirect('index')
+        return redirect('tarefa_disponivel')
