@@ -50,6 +50,7 @@ Versão mobile:
 - Django para CRUD, integração e criação de sites
 - Bootstrap como framework Front End
 - SQlite como linguagem de Banco de Dados
+- Heroku CLI para hospedagem Web
 
 </p>
 </details>
