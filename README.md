@@ -36,6 +36,8 @@ Versão mobile:
 
 ![Web 1](https://github.com/Dom-Luiz-III/projeto_unmep/blob/main/papelada/prints/mobile.png)
 
+![Web 1](https://github.com/Dom-Luiz-III/projeto_unmep/blob/main/papelada/prints/mobile2.jpg)
+
 </p>
 </details>
 
