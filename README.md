@@ -2,6 +2,11 @@
 
 ---
 
+## Atualizações
+O projeto estava hospedado na Heroku porém os créditos gratuitos acabaram então o site teve que ser fechado , mas o link continua o mesmmo:
+https://unmep-heroku-3ad334867682.herokuapp.com/
+(Não está funcionando)
+
 ## Descrição
 
 TarefaNest é um website intuitivo e simples projetado para você criar a sua gestão de suas tarefas diárias de forma prática e acessível pela internet. Com uma interface amigável, permite que você anote suas tarefas importantes a qualquer momento e de qualquer lugar.
