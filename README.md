@@ -3,7 +3,7 @@
 ---
 
 ## Atualizações
-O projeto estava hospedado na Heroku porém os créditos gratuitos acabaram então o site teve que ser fechado , mas o link continua o mesmmo:
+O projeto estava hospedado na Heroku porém os créditos gratuitos acabaram então o site teve que ser fechado , mas o link continua o mesmo:
 https://unmep-heroku-3ad334867682.herokuapp.com/
 (Não está funcionando)
 
